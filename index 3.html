@@ -1,0 +1,977 @@
+<main>
+    <!-- Герой-секция -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">AlphaCAM для станков Beaver, Homag, Biesse Rover, KDT, HOLZ-HER.</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Измените свою технологию раскроя с ЧПУ</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-blue-800 transition duration-300">
+                    <i class="fas fa-envelope mr-2" aria-label="Иконка письма"></i> Связаться с нами
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция статистики -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-blue-600 stats-counter" data-target="95">0</div>
+                    <div class="text-gray-600">Оптимизация материала</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-blue-600 stats-counter" data-target="5">0</div>
+                    <div class="text-gray-600">Установок по России</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-blue-600 stats-counter" data-target="15">0</div>
+                    <div class="text-gray-600">Лет опыта</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-blue-600 stats-counter" data-target="2">0</div>
+                    <div class="text-gray-600">Премиальных брендов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AlphaCAM - главное видео -->
+    <section id="alphacam-section" class="mb-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Главное решение: AlphaCAM</h2>
+        <div class="bg-white rounded-xl overflow-hidden shadow-xl video-wrapper">
+            <div class="md:flex">
+                <div class="md:w-2/3 relative">
+                    <div class="video-container aspect-w-16 aspect-h-9">
+                        <video 
+                            class="w-full h-full object-cover" 
+                            controls 
+                            poster="assets/images/alphacam-preview.jpg" 
+                            preload="metadata"
+                            onplay="logVideoPlay('AlphaCAM')" 
+                            aria-label="Реклама AlphaCAM">
+                            <source src="assets/videos/alphacam-presentation.mp4" type="video/mp4">
+                            <source src="assets/videos/alphacam-presentation.webm" type="video/webm">
+                            <div class="absolute inset-0 flex items-center justify-center bg-gray-100">
+                                <p class="text-gray-600 p-4 text-center">
+                                    Ваш браузер не поддерживает видео. 
+                                    <a href="assets/videos/alphacam-presentation.mp4" class="text-blue-600 underline">Скачайте видео</a>.
+                                </p>
+                            </div>
+                        </video>
+                        <div class="play-button absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all cursor-pointer">
+                            <i class="fas fa-play text-white text-5xl opacity-90 hover:opacity-100 transition-opacity" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 p-6 bg-gray-50">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400 text-2xl mr-3" aria-hidden="true"></i>
+                        <h3 class="text-2xl font-bold text-gray-800">AlphaCAM</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Ведущее ПО для ЧПУ раскроя с продвинутыми возможностями оптимизации для максимального использования материала и ресурса инструмента.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                            <span>Оптимизированный раскрой для экономии материала</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                            <span>Интуитивный 2D интерфейс с интеграцией CAD</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                            <span>Плавный вход инструмента</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                            <span>Последовательность обработки</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                            <span>Оптимизация твердосплавных и компрессионных инструментов</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                            <span>Постпроцессоры для станков с ЧПУ</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.hexagon.com" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded text-center transition">
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция ЧПУ станков -->
+    <section id="features">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">ЧПУ станки</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Beaver -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                <div class="relative video-container aspect-w-16 aspect-h-9">
+                    <video class="w-full" controls poster="assets/images/beaver-preview.jpg" preload="metadata">
+                        <source src="assets/videos/beaver-promo.mp4" type="video/mp4">
+                        <source src="assets/videos/beaver-promo.webm" type="video/webm">
+                    </video>
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-bolt text-blue-500 mr-3" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold">Beaver</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Мощные ЧПУ-станки для раскроя, идеально интегрируются с AlphaCAM для точной обработки и оптимизации затрат.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://www.stanki.ru/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                        </a>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Бестселлер</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Homag -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                <div class="relative video-container aspect-w-16 aspect-h-9">
+                    <video class="w-full" controls poster="assets/images/homag-preview.jpg" preload="metadata">
+                        <source src="assets/videos/homag-demo.mp4" type="video/mp4">
+                        <source src="assets/videos/homag-demo.webm" type="video/webm">
+                    </video>
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-robot text-blue-500 mr-3" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold">Homag</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Автоматизированные ЧПУ решения с интеграцией AlphaCAM для эффективного раскроя и увеличения ресурса инструмента.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://www.homag.com/en/machines/cnc-machining-centers" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                        </a>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Автоматизация</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biesse Rover -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                <div class="relative video-container aspect-w-16 aspect-h-9">
+                    <video class="w-full" controls poster="assets/images/biesse-preview.jpg" preload="metadata">
+                        <source src="assets/videos/biesse-promo.mp4" type="video/mp4">
+                        <source src="assets/videos/biesse-promo.webm" type="video/webm">
+                    </video>
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                < hvordan
+
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-couch text-blue-500 mr-3" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold">Biesse Rover</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Идеальное решение для мебельного производства с точной резкой AlphaCAM и интуитивным 2D интерфейсом.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://biesse.com/ww/en/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                        </a>
+                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Мебель</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KDT -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                <div class="relative video-container aspect-w-16 aspect-h-9">
+                    <video class="w-full" controls poster="assets/images/kdt-preview.jpg" preload="metadata">
+                        <source src="assets/videos/kdt-promo.mp4" type="video/mp4">
+                        <source src="assets/videos/kdt-promo.webm" type="video/webm">
+                    </video>
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-tachometer-alt text-blue-500 mr-3" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold">KDT</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Высокоскоростные ЧПУ станки с AlphaCAM для точной резки и бесшовной интеграции с CAD.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://www.kdtmac.ru/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                        </a>
+                        <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Высокая скорость</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOLZ-HER CNC -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                <div class="relative video-container aspect-w-16 aspect-h-9">
+                    <video class="w-full" controls poster="assets/images/holzher-preview.jpg" preload="metadata">
+                        <source src="assets/videos/holzher-promo.mp4" type="video/mp4">
+                        <source src="assets/videos/holzher-promo.webm" type="video/webm">
+                    </video>
+                    <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-ruler-combined text-blue-500 mr-3" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold">HOLZ-HER CNC</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Прецизионные ЧПУ станки с AlphaCAM для оптимальной резки и экономии инструмента с интуитивным 2D/CAD рабочим процессом.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <a href="https://www.weinig.com/en/panel-processing/cnc-machining-centers.html" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                        </a>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Точность</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Контактная карточка -->
+            <div class="bg-blue-600 rounded-xl overflow-hidden shadow-lg text-white">
+                <div class="p-6 flex flex-col h-full">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-headset text-3xl mr-3" aria-hidden="true"></i>
+                        <h3 class="text-2xl font-bold">Нужна помощь в выборе?</h3>
+                    </div>
+                    <p class="mb-6 opacity-90">Наш эксперт поможет подобрать идеальное решение для ваших производственных нужд.</p>
+                    <div class="mt-auto">
+                        <a href="#contact" class="inline-block bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition duration-300 w-full text-center">
+                            Связаться
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Контактная секция -->
+<section class="py-16 bg-white" id="contact">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Свяжитесь с нашими экспертами по AlphaCAM</h2>
+            <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-600 text-white p-8">
+                        <h3 class="text-2xl font-bold mb-4">Свяжитесь с нами</h3>
+                        <p class="mb-6 opacity-90">Заполните форму, чтобы получить информацию о ценах или задать любые вопросы о AlphaCAM.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt mr-4 text-xl" aria-hidden="true"></i>
+                                <span>+7 (800) 123-4567</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-4 text-xl" aria-hidden="true"></i>
+                                <span>info@alphacam-solutions.ru</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-4 text-xl" aria-hidden="true"></i>
+                                <span>ул. Промышленная, д. 123, офис 456</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Имя</label>
+                                <input type="text" id="name" lang="ru" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" lang="ru" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+                                <input type="tel" id="phone" lang="ru" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="interest" class="block text-sm font-medium text-gray-700 mb-1">Интерес</label>
+                                <select id="interest" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Выберите вариант</option>
+                                    <option value="AlphaCAM">AlphaCAM ПО</option>
+                                    <option value="Beaver">Станки Beaver</option>
+                                    <option value="Homag">Станки Homag</option>
+                                    <option value="Biesse">Biesse Rover</option>
+                                    <option value="KDT">Станки KDT</option>
+                                    <option value="NC-Hops">Станки NC-Hops</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Сообщение</label>
+                                <textarea id="message" rows="3" lang="ru" class="w-full px-4 py-2 border border-gray-300 forced-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">
+                                Отправить сообщение
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Подвал -->
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-cogs mr-2" aria-hidden="true"></i> AlphaCAM Solutions
+                </h3>
+                <p class="text-gray-400">ПО для ЧПУ раскроя и премиальных ЧПУ станков для промышленного применения.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Продукты</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">AlphaCAM ПО</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Станки Beaver</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Решения Homag</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Biesse Rover</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">HOLZ-HER CNC</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Ресурсы</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Документация</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Видеоуроки</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Кейсы</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Блог</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Связь</h4>
+                <div class="flex space-x-4 mb-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                </div>
+                <p class="text-gray-400">Подпишитесь на нашу рассылку</p>
+                <div class="mt-2 flex">
+                    <input type="email" placeholder="Ваш email" lang="ru" class="px-4 py-2 rounded-l-md text-gray-800 w-full">
+                    <button class="bg-blue-600 hover:bg-blue-700 px-4 rounded-r-md transition">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2023 AlphaCAM Solutions. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Обработка клика по кнопке воспроизведения
+    document.querySelectorAll('.play-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const video = this.closest('.video-container').querySelector('video');
+            if (video) {
+                video.play().catch(error => {
+                    console.error('Ошибка воспроизведения видео:', error);
+                });
+                this.style.opacity = '0';
+                setTimeout(() => this.style.display = 'none', 300);
+            } else {
+                console.warn('Видео не найдено для кнопки воспроизведения');
+            }
+        });
+    });
+
+    // Трекинг воспроизведения видео
+    function logVideoPlay(videoName) {
+        console.log(`Воспроизведено видео: ${videoName}`);
+    }
+
+    // Анимированный счетчик для статистики
+    document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.stats-counter');
+        const speed = 200;
+
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const updateCounter = () => {
+                const count = +counter.innerText;
+                const increment = target / speed;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCounter, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCounter();
+        });
+    });
+</script>
+имени дизайн
+Это хорошо структурированная HTML-страница для рекламы AlphaCAM и ЧПУ-станков. Вот основные наблюдения и рекомендации:
+
+Что хорошо:
+
+Чистая семантическая разметка
+Адаптивный дизайн с Tailwind CSS
+Интерактивные элементы (видео, счетчики)
+Доступность (aria-атрибуты)
+Логичная структура секций
+Небольшие проблемы для исправления:
+
+В секции Biesse Rover есть незакрытый тег <div> и случайный текст "hvordan"
+В форме контактов есть опечатка: forced-md вместо rounded-md
+Отсутствует закрывающий тег для textarea
+Рекомендации по улучшению:
+
+Добавьте alt-тексты для изображений
+Проверьте существование видеофайлов по указанным путям
+Добавьте обработку отправки формы
+Рассмотрите lazy loading для видео
+Дизайн выглядит профессионально с синей цветовой схемой, хорошими отступами и четкой визуальной иерархией. Страница эффективно представляет продукты и побуждает к действию.
+
+Нужна помощь с конкретными исправлениями?
+
+В секции Biesse Rover есть незакрытый тег
+
+и случайный текст "hvordan" исправь
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Реклама AlphaCAM и ЧПУ-нестинговых станков: Beaver, Homag, Biesse Rover, KDT, NC-Hops">
+    <meta property="og:title" content="AlphaCAM & ЧПУ станки для раскроя">
+    <meta property="og:description" content="Реклама AlphaCAM и ЧПУ-нестинговых станков: Beaver, Homag, Biesse Rover, KDT, NC-Hops">
+    <meta property="og:image" content="https://yourwebsite.com/assets/images/alphacam-preview.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <title>AlphaCAM & ЧПУ станки для раскроя</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .video-wrapper {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .video-wrapper:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .video-container:hover .play-button {
+            opacity: 1;
+        }
+        .stats-counter {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            background: #000;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Шапка с навигацией -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-cogs text-3xl mr-3" aria-hidden="true"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold">AlphaCAM & ЧПУ решения</h1>
+                </div>
+                <nav class="flex space-x-1 md:space-x-6 items-center">
+                    <a href="#alphacam-section" class="px-3 py-2 rounded hover:bg-blue-700 transition">Продукты</a>
+                    <a href="#features" class="px-3 py-2 rounded hover:bg-blue-700 transition">Возможности</a>
+                    <a href="#contact" class="px-3 py-2 rounded hover:bg-blue-700 transition">Контакты</a>
+                    <span class="text-yellow-500 font-semibold ml-2 md:ml-4">Under the sky</span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Герой-секция -->
+        <section class="gradient-bg text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">AlphaCAM для станков Beaver, Homag, Biesse Rover, KDT, HOLZ-HER.</h2>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Измените свою технологию раскроя с ЧПУ</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-blue-800 transition duration-300">
+                        <i class="fas fa-envelope mr-2" aria-label="Иконка письма"></i> Связаться с нами
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция статистики -->
+        <section class="bg-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="p-4">
+                        <div class="text-4xl font-bold text-blue-600 stats-counter" data-target="95">0</div>
+                        <div class="text-gray-600">Оптимизация материала</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-4xl font-bold text-blue-600 stats-counter" data-target="5">0</div>
+                        <div class="text-gray-600">Установок по России</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-4xl font-bold text-blue-600 stats-counter" data-target="15">0</div>
+                        <div class="text-gray-600">Лет опыта</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-4xl font-bold text-blue-600 stats-counter" data-target="2">0</div>
+                        <div class="text-gray-600">Премиальных брендов</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AlphaCAM - главное видео -->
+        <section id="alphacam-section" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Главное решение: AlphaCAM</h2>
+            <div class="bg-white rounded-xl overflow-hidden shadow-xl video-wrapper">
+                <div class="md:flex">
+                    <div class="md:w-2/3 relative">
+                        <div class="video-container aspect-w-16 aspect-h-9">
+                            <video 
+                                class="w-full h-full object-cover" 
+                                controls 
+                                poster="assets/images/alphacam-preview.jpg" 
+                                preload="metadata"
+                                onplay="logVideoPlay('AlphaCAM')" 
+                                aria-label="Реклама AlphaCAM">
+                                <source src="assets/videos/alphacam-presentation.mp4" type="video/mp4">
+                                <source src="assets/videos/alphacam-presentation.webm" type="video/webm">
+                                <div class="absolute inset-0 flex items-center justify-center bg-gray-100">
+                                    <p class="text-gray-600 p-4 text-center">
+                                        Ваш браузер не поддерживает видео. 
+                                        <a href="assets/videos/alphacam-presentation.mp4" class="text-blue-600 underline">Скачайте видео</a>.
+                                    </p>
+                                </div>
+                            </video>
+                            <div class="play-button absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all cursor-pointer">
+                                <i class="fas fa-play text-white text-5xl opacity-90 hover:opacity-100 transition-opacity" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 p-6 bg-gray-50">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-star text-yellow-400 text-2xl mr-3" aria-hidden="true"></i>
+                            <h3 class="text-2xl font-bold text-gray-800">AlphaCAM</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Ведущее ПО для ЧПУ раскроя с продвинутыми возможностями оптимизации для максимального использования материала и ресурса инструмента.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                                <span>Оптимизированный раскрой для экономии материала</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                                <span>Интуитивный 2D интерфейс с интеграцией CAD</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                                <span>Плавный вход инструмента</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                                <span>Последовательность обработки</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                                <span>Оптимизация твердосплавных и компрессионных инструментов</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                                <span>Постпроцессоры для станков с ЧПУ</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://www.hexagon.com" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded text-center transition">
+                                Узнать больше
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция ЧПУ станков -->
+        <section id="features">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">ЧПУ станки</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Beaver -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                    <div class="relative video-container aspect-w-16 aspect-h-9">
+                        <video class="w-full" controls poster="assets/images/beaver-preview.jpg" preload="metadata">
+                            <source src="assets/videos/beaver-promo.mp4" type="video/mp4">
+                            <source src="assets/videos/beaver-promo.webm" type="video/webm">
+                        </video>
+                        <div class="play-button">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-bolt text-blue-500 mr-3" aria-hidden="true"></i>
+                            <h3 class="text-xl font-bold">Beaver</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Мощные ЧПУ-станки для раскроя, идеально интегрируются с AlphaCAM для точной обработки и оптимизации затрат.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://www.stanki.ru/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                                Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                            </a>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Бестселлер</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homag -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                    <div class="relative video-container aspect-w-16 aspect-h-9">
+                        <video class="w-full" controls poster="assets/images/homag-preview.jpg" preload="metadata">
+                            <source src="assets/videos/homag-demo.mp4" type="video/mp4">
+                            <source src="assets/videos/homag-demo.webm" type="video/webm">
+                        </video>
+                        <div class="play-button">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-robot text-blue-500 mr-3" aria-hidden="true"></i>
+                            <h3 class="text-xl font-bold">Homag</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Автоматизированные ЧПУ решения с интеграцией AlphaCAM для эффективного раскроя и увеличения ресурса инструмента.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://www.homag.com/en/machines/cnc-machining-centers" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                                Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                            </a>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Автоматизация</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biesse Rover -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                    <div class="relative video-container aspect-w-16 aspect-h-9">
+                        <video class="w-full" controls poster="assets/images/biesse-preview.jpg" preload="metadata">
+                            <source src="assets/videos/biesse-promo.mp4" type="video/mp4">
+                            <source src="assets/videos/biesse-promo.webm" type="video/webm">
+                        </video>
+                        <div class="play-button">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-couch text-blue-500 mr-3" aria-hidden="true"></i>
+                            <h3 class="text-xl font-bold">Biesse Rover</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Идеальное решение для мебельного производства с точной резкой AlphaCAM и интуитивным 2D интерфейсом.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://biesse.com/ww/en/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                                Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                            </a>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Мебель</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KDT -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                    <div class="relative video-container aspect-w-16 aspect-h-9">
+                        <video class="w-full" controls poster="assets/images/kdt-preview.jpg" preload="metadata">
+                            <source src="assets/videos/kdt-promo.mp4" type="video/mp4">
+                            <source src="assets/videos/kdt-promo.webm" type="video/webm">
+                        </video>
+                        <div class="play-button">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-tachometer-alt text-blue-500 mr-3" aria-hidden="true"></i>
+                            <h3 class="text-xl font-bold">KDT</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Высокоскоростные ЧПУ станки с AlphaCAM для точной резки и бесшовной интеграции с CAD.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://www.kdtmac.ru/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                                Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                            </a>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Высокая скорость</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HOLZ-HER CNC -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
+                    <div class="relative video-container aspect-w-16 aspect-h-9">
+                        <video class="w-full" controls poster="assets/images/holzher-preview.jpg" preload="metadata">
+                            <source src="assets/videos/holzher-promo.mp4" type="video/mp4">
+                            <source src="assets/videos/holzher-promo.webm" type="video/webm">
+                        </video>
+                        <div class="play-button">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-ruler-combined text-blue-500 mr-3" aria-hidden="true"></i>
+                            <h3 class="text-xl font-bold">HOLZ-HER CNC</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Прецизионные ЧПУ станки с AlphaCAM для оптимальной резки и экономии инструмента с интуитивным 2D/CAD рабочим процессом.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://www.weinig.com/en/panel-processing/cnc-machining-centers.html" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                                Подробнее <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                            </a>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Точность</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Контактная карточка -->
+                <div class="bg-blue-600 rounded-xl overflow-hidden shadow-lg text-white">
+                    <div class="p-6 flex flex-col h-full">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-headset text-3xl mr-3" aria-hidden="true"></i>
+                            <h3 class="text-2xl font-bold">Нужна помощь в выборе?</h3>
+                        </div>
+                        <p class="mb-6 opacity-90">Наш эксперт поможет подобрать идеальное решение для ваших производственных нужд.</p>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition duration-300 w-full text-center">
+                                Связаться
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контактная секция -->
+    <section class="py-16 bg-white" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Свяжитесь с нашими экспертами по AlphaCAM</h2>
+                <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-blue-600 text-white p-8">
+                            <h3 class="text-2xl font-bold mb-4">Свяжитесь с нами</h3>
+                            <p class="mb-6 opacity-90">Заполните форму, чтобы получить информацию о ценах или задать любые вопросы о AlphaCAM.</p>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-phone-alt mr-4 text-xl" aria-hidden="true"></i>
+                                    <span>+7 (800) 123-4567</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-envelope mr-4 text-xl" aria-hidden="true"></i>
+                                    <span>info@alphacam-solutions.ru</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt mr-4 text-xl" aria-hidden="true"></i>
+                                    <span>ул. Промышленная, д. 123, офис 456</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8">
+                            <form class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Имя</label>
+                                    <input type="text" id="name" lang="ru" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                    <input type="email" id="email" lang="ru" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+                                    <input type="tel" id="phone" lang="ru" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="interest" class="block text-sm font-medium text-gray-700 mb-1">Интерес</label>
+                                    <select id="interest" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Выберите вариант</option>
+                                        <option value="AlphaCAM">AlphaCAM ПО</option>
+                                        <option value="Beaver">Станки Beaver</option>
+                                        <option value="Homag">Станки Homag</option>
+                                        <option value="Biesse">Biesse Rover</option>
+                                        <option value="KDT">Станки KDT</option>
+                                        <option value="NC-Hops">Станки NC-Hops</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Сообщение</label>
+                                    <textarea id="message" rows="3" lang="ru" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">
+                                    Отправить сообщение
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-cogs mr-2" aria-hidden="true"></i> AlphaCAM Solutions
+                    </h3>
+                    <p class="text-gray-400">ПО для ЧПУ раскроя и премиальных ЧПУ станков для промышленного применения.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Продукты</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">AlphaCAM ПО</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Станки Beaver</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Решения Homag</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Biesse Rover</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">HOLZ-HER CNC</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Ресурсы</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Документация</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Видеоуроки</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Кейсы</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Блог</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Связь</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                    <p class="text-gray-400">Подпишитесь на нашу рассылку</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Ваш email" lang="ru" class="px-4 py-2 rounded-l-md text-gray-800 w-full">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 rounded-r-md transition">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 AlphaCAM Solutions. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Обработка клика по кнопке воспроизведения
+        document.querySelectorAll('.play-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const video = this.closest('.video-container').querySelector('video');
+                if (video) {
+                    video.play().catch(error => {
+                        console.error('Ошибка воспроизведения видео:', error);
+                    });
+                    this.style.opacity = '0';
+                    setTimeout(() => this.style.display = 'none', 300);
+                } else {
+                    console.warn('Видео не найдено для кнопки воспроизведения');
+                }
+            });
+        });
+
+        // Трекинг воспроизведения видео
+        function logVideoPlay(videoName) {
+            console.log(`Воспроизведено видео: ${videoName}`);
+        }
+
+        // Анимированный счетчик для статистики
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.stats-counter');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const updateCounter = () => {
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCounter, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        });
+    </script>
+</body>
+</html>
