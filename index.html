@@ -6,12 +6,152 @@
     <meta name="description" content="Реклама AlphaCAM и ЧПУ-нестинговых станков: Beaver, Homag, Biesse Rover, KDT, NC-Hops">
     <meta property="og:title" content="AlphaCAM & ЧПУ станки для раскроя">
     <meta property="og:description" content="Реклама AlphaCAM и ЧПУ-нестинговых станков: Beaver, Homag, Biesse Rover, KDT, NC-Hops">
-    <meta property="og:image" content="https://yourwebsite.com/assets/images/alphacam-preview.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://alexshorki72-bot.github.io/my-website-/assets/images/alphacam-preview.jpg">
+    <meta property="og:url" content="https://alexshorki72-bot.github.io/my-website-/">
     <title>AlphaCAM & ЧПУ станки для раскроя</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Fallback styles если Tailwind не загрузится */
+        .bg-gray-50 { background-color: #f9fafb; }
+        .font-sans { font-family: system-ui, sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); }
+        .text-white { color: white; }
+        .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+        .bg-white { background-color: white; }
+        .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+        .bg-gray-800 { background-color: #1f2937; }
+        .text-gray-600 { color: #4b5563; }
+        .text-blue-600 { color: #2563eb; }
+        .text-yellow-500 { color: #eab308; }
+        .text-green-500 { color: #10b981; }
+        .text-gray-800 { color: #1f2937; }
+        .text-gray-400 { color: #9ca3af; }
+        .text-gray-700 { color: #374151; }
+        .border-gray-300 { border-color: #d1d5db; }
+        .border-white { border-color: white; }
+        .bg-blue-600 { background-color: #2563eb; }
+        .bg-blue-700 { background-color: #1d4ed8; }
+        .bg-blue-100 { background-color: #dbeafe; }
+        .bg-green-100 { background-color: #dcfce7; }
+        .bg-purple-100 { background-color: #f3e8ff; }
+        .bg-red-100 { background-color: #fee2e2; }
+        .bg-yellow-100 { background-color: #fef9c3; }
+        .bg-gray-100 { background-color: #f3f4f6; }
+        .bg-gray-50 { background-color: #f9fafb; }
+        .hover\:bg-blue-700:hover { background-color: #1d4ed8; }
+        .hover\:bg-white:hover { background-color: white; }
+        .hover\:bg-gray-100:hover { background-color: #f3f4f6; }
+        .hover\:text-blue-800:hover { color: #1e40af; }
+        .hover\:text-white:hover { color: white; }
+        .hover\:text-blue-800:hover { color: #1e40af; }
+        
+        /* Container */
+        .container { width: 100%; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+        @media (min-width: 640px) { .container { max-width: 640px; } }
+        @media (min-width: 768px) { .container { max-width: 768px; } }
+        @media (min-width: 1024px) { .container { max-width: 1024px; } }
+        @media (min-width: 1280px) { .container { max-width: 1280px; } }
+        
+        /* Flexbox */
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .flex-row { flex-direction: row; }
+        .flex-wrap { flex-wrap: wrap; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        
+        /* Grid */
+        .grid { display: grid; }
+        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+        .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        
+        /* Spacing */
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .p-8 { padding: 2rem; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+        .py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+        .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+        .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+        .py-0\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+        .px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+        .mr-2 { margin-right: 0.5rem; }
+        .mr-3 { margin-right: 0.75rem; }
+        .mr-4 { margin-right: 1rem; }
+        .ml-2 { margin-left: 0.5rem; }
+        .ml-4 { margin-left: 1rem; }
+        .mb-3 { margin-bottom: 0.75rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mb-12 { margin-bottom: 3rem; }
+        .mb-16 { margin-bottom: 4rem; }
+        .mt-2 { margin-top: 0.5rem; }
+        .mt-4 { margin-top: 1rem; }
+        .mt-8 { margin-top: 2rem; }
+        .mt-auto { margin-top: auto; }
+        .space-y-2 > * + * { margin-top: 0.5rem; }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        .gap-3 { gap: 0.75rem; }
+        .gap-4 { gap: 1rem; }
+        .gap-8 { gap: 2rem; }
+        .space-x-1 > * + * { margin-left: 0.25rem; }
+        .space-x-4 > * + * { margin-left: 1rem; }
+        
+        /* Sizing */
+        .w-full { width: 100%; }
+        .h-full { height: 100%; }
+        .md\:w-1\/2 { width: 50%; }
+        .md\:w-1\/3 { width: 33.333333%; }
+        .md\:w-2\/3 { width: 66.666667%; }
+        
+        /* Typography */
+        .text-sm { font-size: 0.875rem; }
+        .text-xs { font-size: 0.75rem; }
+        .text-xl { font-size: 1.25rem; }
+        .text-2xl { font-size: 1.5rem; }
+        .text-3xl { font-size: 1.875rem; }
+        .text-4xl { font-size: 2.25rem; }
+        .text-5xl { font-size: 3rem; }
+        .font-bold { font-weight: 700; }
+        .font-medium { font-weight: 500; }
+        .font-semibold { font-weight: 600; }
+        .text-center { text-align: center; }
+        
+        /* Borders */
+        .rounded { border-radius: 0.25rem; }
+        .rounded-md { border-radius: 0.375rem; }
+        .rounded-lg { border-radius: 0.5rem; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .rounded-l-md { border-top-left-radius: 0.375rem; border-bottom-left-radius: 0.375rem; }
+        .rounded-r-md { border-top-right-radius: 0.375rem; border-bottom-right-radius: 0.375rem; }
+        .border { border-width: 1px; }
+        .border-2 { border-width: 2px; }
+        .border-t { border-top-width: 1px; }
+        
+        /* Shadows */
+        .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+        .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        
+        /* Effects */
+        .opacity-90 { opacity: 0.9; }
+        .overflow-hidden { overflow: hidden; }
+        
+        /* Transitions */
+        .transition { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+        .transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+        .transition-opacity { transition-property: opacity; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+        .duration-300 { transition-duration: 300ms; }
+        
+        /* Custom styles */
         .video-wrapper {
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -19,9 +159,6 @@
         .video-wrapper:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
         }
         .play-button {
             position: absolute;
@@ -37,6 +174,7 @@
             align-items: center;
             opacity: 0;
             transition: opacity 0.3s ease;
+            cursor: pointer;
         }
         .video-container:hover .play-button {
             opacity: 1;
@@ -56,7 +194,56 @@
             left: 0;
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
+        
+        /* Responsive */
+        @media (min-width: 768px) {
+            .md\:flex { display: flex; }
+            .md\:flex-row { flex-direction: row; }
+            .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+            .md\:text-3xl { font-size: 1.875rem; }
+            .md\:text-5xl { font-size: 3rem; }
+            .md\:text-2xl { font-size: 1.5rem; }
+            .md\:space-x-6 > * + * { margin-left: 1.5rem; }
+            .md\:ml-4 { margin-left: 1rem; }
+            .md\:mb-0 { margin-bottom: 0; }
+        }
+        @media (min-width: 1024px) {
+            .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+        @media (min-width: 640px) {
+            .sm\:flex-row { flex-direction: row; }
+        }
+        
+        /* Max widths */
+        .max-w-3xl { max-width: 48rem; }
+        .max-w-4xl { max-width: 56rem; }
+        
+        /* Focus styles */
+        .focus\:ring-blue-500:focus { outline: 2px solid transparent; outline-offset: 2px; box-shadow: 0 0 0 2px #3b82f6; }
+        .focus\:border-blue-500:focus { border-color: #3b82f6; }
+        
+        /* Cursor */
+        .cursor-pointer { cursor: pointer; }
+        
+        /* Display */
+        .hidden { display: none; }
+        .block { display: block; }
+        .inline-block { display: inline-block; }
+        
+        /* Position */
+        .absolute { position: absolute; }
+        .relative { position: relative; }
+        .fixed { position: fixed; }
+        .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+        
+        /* Object fit */
+        .object-cover { object-fit: cover; }
+        
+        /* Z-index */
+        .z-50 { z-index: 50; }
     </style>
 </head>
 <body class="bg-gray-50 font-sans">
@@ -122,24 +309,23 @@
             <div class="bg-white rounded-xl overflow-hidden shadow-xl video-wrapper">
                 <div class="md:flex">
                     <div class="md:w-2/3 relative">
-                        <div class="video-container aspect-w-16 aspect-h-9">
-                          <video 
-                           class="w-full h-full object-cover" 
-                             controls 
-                             poster="/my-website-/assets/images/alphacam-preview.jpg" 
-                              preload="metadata"
-                              onplay="logVideoPlay('AlphaCAM')" 
-                              aria-label="Реклама AlphaCAM">
-                              <source src="/my-website-/assets/videos/alphacam-presentation.mp4" type="video/mp4">
-                              <source src="/my-website-/assets/videos/alphacam-presentation.webm" type="video/webm">
-                              <div class="absolute inset-0 flex items-center justify-center bg-gray-100">
-                              <p class="text-gray-600 p-4 text-center">
-                              Ваш браузер не поддерживает видео. 
-                              <a href="/my-website-/assets/videos/alphacam-presentation.mp4" class="text-blue-600 underline">Скачайте видео</a>.
-                                </p>
-                                 </div>
-                             </video>
-                            <div class="play-button absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all cursor-pointer">
+                        <div class="video-container">
+                            <video 
+                                class="w-full h-full object-cover" 
+                                controls 
+                                poster="./assets/images/alphacam-preview.jpg" 
+                                preload="metadata"
+                                onplay="logVideoPlay('AlphaCAM')" 
+                                aria-label="Реклама AlphaCAM">
+                                <source src="./assets/videos/alphacam-presentation.mp4" type="video/mp4">
+                                <div class="absolute inset-0 flex items-center justify-center bg-gray-100">
+                                    <p class="text-gray-600 p-4 text-center">
+                                        Ваш браузер не поддерживает видео. 
+                                        <a href="./assets/videos/alphacam-presentation.mp4" class="text-blue-600 underline">Скачайте видео</a>.
+                                    </p>
+                                </div>
+                            </video>
+                            <div class="play-button">
                                 <i class="fas fa-play text-white text-5xl opacity-90 hover:opacity-100 transition-opacity" aria-hidden="true"></i>
                             </div>
                         </div>
@@ -192,10 +378,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Beaver -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
-                    <div class="relative video-container aspect-w-16 aspect-h-9">
-                        <video class="w-full" controls poster="assets/images/beaver-preview.jpg" preload="metadata">
-                            <source src="assets/videos/beaver-promo.mp4" type="video/mp4">
-                            <source src="assets/videos/beaver-promo.webm" type="video/webm">
+                    <div class="relative video-container">
+                        <video controls poster="./assets/images/beaver-preview.jpg" preload="metadata">
+                            <source src="./assets/videos/beaver-promo.mp4" type="video/mp4">
                         </video>
                         <div class="play-button">
                             <i class="fas fa-play" aria-hidden="true"></i>
@@ -220,10 +405,9 @@
 
                 <!-- Homag -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
-                    <div class="relative video-container aspect-w-16 aspect-h-9">
-                        <video class="w-full" controls poster="assets/images/homag-preview.jpg" preload="metadata">
-                            <source src="assets/videos/homag-demo.mp4" type="video/mp4">
-                            <source src="assets/videos/homag-demo.webm" type="video/webm">
+                    <div class="relative video-container">
+                        <video controls poster="./assets/images/homag-preview.jpg" preload="metadata">
+                            <source src="./assets/videos/homag-demo.mp4" type="video/mp4">
                         </video>
                         <div class="play-button">
                             <i class="fas fa-play" aria-hidden="true"></i>
@@ -248,17 +432,14 @@
 
                 <!-- Biesse Rover -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
-                    <div class="relative video-container aspect-w-16 aspect-h-9">
-                        <video class="w-full" controls poster="assets/images/biesse-preview.jpg" preload="metadata">
-                            <source src="assets/videos/biesse-promo.mp4" type="video/mp4">
-                            <source src="assets/videos/biesse-promo.webm" type="video/webm">
+                    <div class="relative video-container">
+                        <video controls poster="./assets/images/biesse-preview.jpg" preload="metadata">
+                            <source src="./assets/videos/biesse-promo.mp4" type="video/mp4">
                         </video>
                         <div class="play-button">
                             <i class="fas fa-play" aria-hidden="true"></i>
                         </div>
                     </div>
-                    < hvordan
-
                     <div class="p-6">
                         <div class="flex items-center mb-3">
                             <i class="fas fa-couch text-blue-500 mr-3" aria-hidden="true"></i>
@@ -278,10 +459,9 @@
 
                 <!-- KDT -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
-                    <div class="relative video-container aspect-w-16 aspect-h-9">
-                        <video class="w-full" controls poster="assets/images/kdt-preview.jpg" preload="metadata">
-                            <source src="assets/videos/kdt-promo.mp4" type="video/mp4">
-                            <source src="assets/videos/kdt-promo.webm" type="video/webm">
+                    <div class="relative video-container">
+                        <video controls poster="./assets/images/kdt-preview.jpg" preload="metadata">
+                            <source src="./assets/videos/kdt-promo.mp4" type="video/mp4">
                         </video>
                         <div class="play-button">
                             <i class="fas fa-play" aria-hidden="true"></i>
@@ -306,10 +486,9 @@
 
                 <!-- HOLZ-HER CNC -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg video-wrapper">
-                    <div class="relative video-container aspect-w-16 aspect-h-9">
-                        <video class="w-full" controls poster="assets/images/holzher-preview.jpg" preload="metadata">
-                            <source src="assets/videos/holzher-promo.mp4" type="video/mp4">
-                            <source src="assets/videos/holzher-promo.webm" type="video/webm">
+                    <div class="relative video-container">
+                        <video controls poster="./assets/images/holzher-preview.jpg" preload="metadata">
+                            <source src="./assets/videos/holzher-promo.mp4" type="video/mp4">
                         </video>
                         <div class="play-button">
                             <i class="fas fa-play" aria-hidden="true"></i>
@@ -404,114 +583,6 @@
                                 </div>
                                 <div>
                                     <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Сообщение</label>
-                                    <textarea id="message" rows="3" lang="ru" class="w-full px-4 py-2 border border-gray-300 forced-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                                    <textarea id="message" rows="3" lang="ru" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
                                 </div>
-                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition duration-300">
-                                    Отправить сообщение
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Подвал -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-cogs mr-2" aria-hidden="true"></i> AlphaCAM Solutions
-                    </h3>
-                    <p class="text-gray-400">ПО для ЧПУ раскроя и премиальных ЧПУ станков для промышленного применения.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Продукты</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">AlphaCAM ПО</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Станки Beaver</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Решения Homag</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Biesse Rover</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">HOLZ-HER CNC</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Ресурсы</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Документация</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Видеоуроки</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Кейсы</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Блог</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Связь</h4>
-                    <div class="flex space-x-4 mb-4">
-                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                    <p class="text-gray-400">Подпишитесь на нашу рассылку</p>
-                    <div class="mt-2 flex">
-                        <input type="email" placeholder="Ваш email" lang="ru" class="px-4 py-2 rounded-l-md text-gray-800 w-full">
-                        <button class="bg-blue-600 hover:bg-blue-700 px-4 rounded-r-md transition">
-                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 AlphaCAM Solutions. Все права защищены.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Обработка клика по кнопке воспроизведения
-        document.querySelectorAll('.play-button').forEach(button => {
-            button.addEventListener('click', function() {
-                const video = this.closest('.video-container').querySelector('video');
-                if (video) {
-                    video.play().catch(error => {
-                        console.error('Ошибка воспроизведения видео:', error);
-                    });
-                    this.style.opacity = '0';
-                    setTimeout(() => this.style.display = 'none', 300);
-                } else {
-                    console.warn('Видео не найдено для кнопки воспроизведения');
-                }
-            });
-        });
-
-        // Трекинг воспроизведения видео
-        function logVideoPlay(videoName) {
-            console.log(`Воспроизведено видео: ${videoName}`);
-        }
-
-        // Анимированный счетчик для статистики
-        document.addEventListener('DOMContentLoaded', () => {
-            const counters = document.querySelectorAll('.stats-counter');
-            const speed = 200;
-
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-target');
-                const updateCounter = () => {
-                    const count = +counter.innerText;
-                    const increment = target / speed;
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + increment);
-                        setTimeout(updateCounter, 1);
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-                updateCounter();
-            });
-        });
-    </script>
-</body>
-
-</html>
+                                <button type="submit" class="w-full bg-blue
