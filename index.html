@@ -123,22 +123,22 @@
                 <div class="md:flex">
                     <div class="md:w-2/3 relative">
                         <div class="video-container aspect-w-16 aspect-h-9">
-                            <video 
-                                class="w-full h-full object-cover" 
-                                controls 
-                                poster="assets/images/alphacam-preview.jpg" 
-                                preload="metadata"
-                                onplay="logVideoPlay('AlphaCAM')" 
-                                aria-label="Реклама AlphaCAM">
-                                <source src="assets/videos/alphacam-presentation.mp4" type="video/mp4">
-                                <source src="assets/videos/alphacam-presentation.webm" type="video/webm">
-                                <div class="absolute inset-0 flex items-center justify-center bg-gray-100">
-                                    <p class="text-gray-600 p-4 text-center">
-                                        Ваш браузер не поддерживает видео. 
-                                        <a href="assets/videos/alphacam-presentation.mp4" class="text-blue-600 underline">Скачайте видео</a>.
-                                    </p>
-                                </div>
-                            </video>
+                          <video 
+                           class="w-full h-full object-cover" 
+                             controls 
+                             poster="/my-website-/assets/images/alphacam-preview.jpg" 
+                              preload="metadata"
+                              onplay="logVideoPlay('AlphaCAM')" 
+                              aria-label="Реклама AlphaCAM">
+                              <source src="/my-website-/assets/videos/alphacam-presentation.mp4" type="video/mp4">
+                              <source src="/my-website-/assets/videos/alphacam-presentation.webm" type="video/webm">
+                              <div class="absolute inset-0 flex items-center justify-center bg-gray-100">
+                              <p class="text-gray-600 p-4 text-center">
+                              Ваш браузер не поддерживает видео. 
+                              <a href="/my-website-/assets/videos/alphacam-presentation.mp4" class="text-blue-600 underline">Скачайте видео</a>.
+                                </p>
+                                 </div>
+                             </video>
                             <div class="play-button absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-30 transition-all cursor-pointer">
                                 <i class="fas fa-play text-white text-5xl opacity-90 hover:opacity-100 transition-opacity" aria-hidden="true"></i>
                             </div>
@@ -513,4 +513,5 @@
         });
     </script>
 </body>
+
 </html>
